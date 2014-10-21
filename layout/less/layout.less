@@ -1,0 +1,71 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body{
+    background-image: url('../../image/bg-03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0 0 0;
+}
+
+@lineH: 40px;
+
+// 草绿
+@grassGreen: #ACB36A;
+// 浅白
+@paperWhite: lighten(#F9E2CE, 5%);
+// 暗黄
+@darkYellow: #E5BE7A;
+#line-paper{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    height: 600px;
+    background-color: #fff;
+    
+    // support since IE 10
+    // colorName start, colorName end, ... 
+    background-image: repeating-linear-gradient(
+        180deg,
+        @grassGreen 0px,
+        @grassGreen @lineH,
+        
+        @paperWhite @lineH,
+        @paperWhite 2*@lineH,
+        
+        @darkYellow 2*@lineH,
+        @darkYellow 3*@lineH,
+
+        @paperWhite 3*@lineH,
+        @paperWhite 4*@lineH
+    );
+
+    // opacity: 0.5;
+    #ctn{
+        position: absolute;
+        padding: 0 1em;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        opacity: 0.5;
+
+        .line{
+            margin: 0;
+            font-size: 20px;
+            line-height: 40px;
+
+            font-family: "chifont";
+        }
+    }
+}
+
+.noise{
+    background-image: url('../../image/noise.png');
+    background-repeat: repeat;
+}
