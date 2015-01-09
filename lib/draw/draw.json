@@ -1,0 +1,22 @@
+[
+    {
+        "name": "seal",
+        "name-ch": "海豹",
+        "file": "seal.png"
+    },
+    {
+        "name": "cellphone",
+        "name-ch": "翻盖手机",
+        "file": "cellphone.png"
+    },
+    {
+        "name": "crab",
+        "name-ch": "螃蟹",
+        "file": "crab.png"
+    },
+    {
+        "name": "zebra",
+        "name-ch": "斑马",
+        "file": "zebra.png"
+    },
+]
